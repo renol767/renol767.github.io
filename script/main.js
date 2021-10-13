@@ -278,8 +278,15 @@ const animationTimeline = () => {
 };
 
 // Import the data to customize and insert them into page
+// var s = [{
+//   "name": "Irene",
+//   "greetingText": "I really like your name btw!",
+//   "wishText": "May the js.prototypes always be with you! ;)",
+//   "imagePath": "img/irene.jpg"
+// }]
+
 const fetchData = () => {
-  fetch("customize.json")
+  fetch(s)
     .then(data => data.json())
     .then(data => {
       Object.keys(data).map(customData => {

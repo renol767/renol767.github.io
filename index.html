@@ -22,8 +22,8 @@
   <div class="container">
     <div class="one">
       <h1 class="one">
-        Hey
-        <span id="name"></span>
+        Hallo
+        <span id="tfname"></span>
       </h1>
       <p class="two" id="greetingText">I really like your name btw!</p>
     </div>
@@ -57,11 +57,11 @@
       </p>
     </div>
     <div class="six">
-      <img src="" alt="" class="lydia-dp" id="imagePath" />
+      <img src="img/card.png" alt="" class="lydia-dp" id="imagePath"/>
       <img src="img/hat.svg" alt="" class="hat" />
       <div class="wish">
         <h3 class="wish-hbd">Happy Birthday!</h3>
-        <h5 id="wishText">May the js.prototypes always be with you! ;)</h5>
+        <h5>A wish for you on your birthday, whatever you ask may you receive, \n whatever you seek may you find, whatever you wish may it be fulfilled on your birthday and always. Happy birthday!</h5>
       </div>
     </div>
     <div class="seven">
@@ -141,5 +141,12 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.5/dist/sweetalert2.all.min.js"></script>
 <script type="application/javascript" src="script/main.js"></script>
+<script>
+  var ll = window.location.href
+  var url = new URL(ll);
+  var c = url.searchParams.get("name");
+  document.getElementById("tfname").innerText = c
+</script>
+
 
 </html>
