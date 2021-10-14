@@ -149,9 +149,12 @@
   if (s == "L"){
     document.getElementById("tfname").innerText = "Pak " + c;
     document.getElementById("nma").innerText= "Pak " + z;
-  } else {
+  } else if (s == "P") {
     document.getElementById("tfname").innerText = "Bu " + c;
     document.getElementById("nma").innerText= "Bu " + z;
+  }else {
+    document.getElementById("tfname").innerText = c;
+    document.getElementById("nma").innerText= z;
   }
 </script>
 
