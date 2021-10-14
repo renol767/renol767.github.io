@@ -145,7 +145,12 @@
   var ll = window.location.href
   var url = new URL(ll);
   var c = url.searchParams.get("name");
-  document.getElementById("tfname").innerText = c
+  var s = url.searchParams.get("jk")
+  if (s == "L"){
+    document.getElementById("tfname").innerText = "Pak " + c
+  } else {
+    document.getElementById("tfname").innerText = "Bu " + c
+  }
 </script>
 
 
