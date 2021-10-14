@@ -25,10 +25,10 @@
         Hallo
         <span id="tfname"></span>
       </h1>
-      <p class="two" id="greetingText">I really like your name btw!</p>
+      <p class="two" id="greetingText">Happy Birthday!</p>
     </div>
     <div class="three">
-      <p>It's your birthday!!! :D</p>
+      <p>Hari ini adalah hari ulang tahun <p id="nma"></p></p>
     </div>
     <div class="four">
       <div class="text-box">
@@ -39,29 +39,28 @@
       </div>
     </div>
     <div class="five">
-      <p class="idea-1">That's what I was going to do.</p>
-      <p class="idea-2">But then I stopped.</p>
+      <p class="idea-1">Itulah yang akan saya lakukan.</p>
+      <p class="idea-2">Tapi kemudian saya berhenti.</p>
       <p class="idea-3">
-        I realised, I wanted to do something
-        <strong>special</strong>
+        Saya sadar, saya ingin melakukan sesuatu yang
+        <strong>spesial</strong>
         .
       </p>
-      <p class="idea-4">Because,</p>
+      <p class="idea-4">Karena,</p>
       <p class="idea-5">
-        You are Special
+        Anda Spesial
         <span>:)</span>
       </p>
       <p class="idea-6">
-        <span>S</span>
-        <span>O</span>
+        <span>Jadi</span>
+        <span>..</span>
       </p>
     </div>
     <div class="six">
       <img src="img/card.png" alt="" class="lydia-dp" id="imagePath"/>
-      <img src="img/hat.svg" alt="" class="hat" />
       <div class="wish">
-        <h3 class="wish-hbd">Happy Birthday!</h3>
-        <h5>A wish for you on your birthday, whatever you ask may you receive, \n whatever you seek may you find, whatever you wish may it be fulfilled on your birthday and always. Happy birthday!</h5>
+        <h3 class="wish-hbd">HAPPY BIRTHDAY!</h3>
+        <h5>Sebuah harapan untukmu di hari ulang tahunmu, apa pun yang kamu minta semoga kamu terima, apa pun yang kamu cari semoga kamu temukan, apa pun yang kamu inginkan semoga terkabul di hari ulang tahunmu dan selalu. Selamat ulang tahun!</h5>
       </div>
     </div>
     <div class="seven">
@@ -131,8 +130,8 @@
       </svg>
     </div>
     <div class="nine">
-      <p>Okay, now come back and tell me if you liked it.</p>
-      <p id="replay">Or click, if you want to watch it again.</p>
+      <p>Oke, Jika Anda menyukainya.</p>
+      <p id="replay">Klik Saya, jika Anda ingin menontonnya lagi.</p>
       <p class="last-smile">:)</p>
     </div>
   </div>
@@ -145,11 +144,14 @@
   var ll = window.location.href
   var url = new URL(ll);
   var c = url.searchParams.get("name");
+  var z = url.searchParams.get("name");
   var s = url.searchParams.get("jk")
   if (s == "L"){
-    document.getElementById("tfname").innerText = "Pak " + c
+    document.getElementById("tfname").innerText = "Pak " + c;
+    document.getElementById("nma").innerText= "Pak " + z;
   } else {
-    document.getElementById("tfname").innerText = "Bu " + c
+    document.getElementById("tfname").innerText = "Bu " + c;
+    document.getElementById("nma").innerText= "Bu " + z;
   }
 </script>
 

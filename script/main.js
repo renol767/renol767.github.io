@@ -32,7 +32,6 @@ const animationTimeline = () => {
   hbd.innerHTML = `<span>${hbd.innerHTML
     .split("")
     .join("</span><span>")}</span`;
-
   const ideaTextTrans = {
     opacity: 0,
     y: -20,
@@ -276,14 +275,6 @@ const animationTimeline = () => {
     tl.restart();
   });
 };
-
-// Import the data to customize and insert them into page
-// var s = [{
-//   "name": "Irene",
-//   "greetingText": "I really like your name btw!",
-//   "wishText": "May the js.prototypes always be with you! ;)",
-//   "imagePath": "img/irene.jpg"
-// }]
 
 const fetchData = () => {
   fetch(s)
